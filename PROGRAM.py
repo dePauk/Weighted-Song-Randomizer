@@ -1,3 +1,4 @@
-#Weighted song randomizer
+import random
+import tkinter
 
-##
+pass
