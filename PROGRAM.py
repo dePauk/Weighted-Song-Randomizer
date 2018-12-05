@@ -1,5 +1,5 @@
 import random
-import tkinter
+import tkinter as tk
 
 
 
@@ -11,7 +11,13 @@ class Playlist:
     def __repr__ (self):
         return ("A Playlist")
 
+    def set_length(self,x):
+        playlist_length = x
+        
+
 testpl = Playlist()
+
+okno = tk.Tk()
 
 
 
