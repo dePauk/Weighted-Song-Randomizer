@@ -31,6 +31,7 @@ class Playlist:
 
     def set_length(self,x):
         repetition_happened = False
+        #reps = 0
         if x > 10: # Change later in process
             return "Error. Currently only playlists of up to 10 songs allowed."
         else:
@@ -42,6 +43,7 @@ class Playlist:
                 if chosen_song not in already_chosen:                                
                     self.songs.add(chosen_song)
                     already_chosen.add(chosen_song)
+                    #print(self.songs) ###)
                 else:
                     repetition_happened = True
                     
@@ -55,16 +57,17 @@ class Playlist:
                     print (reps_str + " repetition occured.")
                 elif reps > 1:
                     print (reps_str + " repetitions occured.")
-            else:
-                pass
+                else:
+                    pass
+                self.set_length(x)
+            
             
             return self.songs
-            repetition_happened = False
-
-
 
     def rename(self,x):
         self.name = str(x)
+
+        #input
 
 
         
@@ -74,7 +77,14 @@ class Playlist:
 testpl = Playlist()
 
 
-#window = tk.Tk()
+##window = tk.Tk()
+##titular = tk.Frame(window).pack()
+##title = tk.Label(titular, text = "Weighted song randomizer").pack()
+##
+##
+##
+##window.mainloop()
+
 
 
 
