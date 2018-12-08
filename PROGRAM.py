@@ -44,11 +44,17 @@ class Playlist:
                     already_chosen.add(chosen_song)
                 else:
                     repetition_happened = True
+                    
                     #Change this for no repetitions, option repetitions on/off?
 
            
             if repetition_happened == True:
-                print ("A repetition happened.")
+                reps = x - len(self.songs)
+                reps_str = str(reps)
+                if reps == 1:                
+                    print (reps_str + " repetition occured.")
+                elif reps > 1:
+                    print (reps_str + " repetitions occured.")
             else:
                 pass
             
@@ -68,7 +74,7 @@ class Playlist:
 testpl = Playlist()
 
 
-#okno = tk.Tk()
+#window = tk.Tk()
 
 
 
