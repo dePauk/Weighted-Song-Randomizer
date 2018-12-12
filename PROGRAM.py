@@ -1,14 +1,42 @@
 import random
 import tkinter as tk
 
+
 #repetition_happened = False
 
 xls = open('sample-songlist.xlsx')
 
-all_songs_set = {"song1","song2","song3","song4","song5","song6",
-             "song7","song8","song9","song10","song11","song12",
-             "song13","song14","song15","song16","song17","song18",
-             "song19","song20"}
+all_songs_set = {"Martin Garrix - Animals (Oliver Heldens Remix)",
+"Disclosure feat. Sam Smith - Latch (Oliver Heldens Remix)",
+"Koos - Switch",
+"Showtek - 90s By Nature feat. MC Ambush (Curbi Remix)",
+"Oliver $ & Jimi Jules - Pushing On (Tchami Remix)",
+"Asino - Ouverture in Major",
+"Boothed - Octopussy",
+"Tchami - Shot Caller",
+"David Guetta ft. Akon - Sexy Bitch",
+"The Black Eyed Peas - Just Can't Get Enough",
+"Clinton Sparks - Geronimo (Gregor Salto Remix)",
+"Eiffel 65 - Blue (Da Ba Dee)",
+"Mesto - Tetris",
+"Robin Thicke - Feel Good (Oliver Heldens Remix)",
+"Duke Dumont - Won't Look Back (Shadow Child Remix)",
+"Linkin Park - Hit The Floor",
+"Godlips - The Power Of The Dark Side",
+"Yeah Yeah Yeahs x A-Trak - Heads Will Roll (Jonas Aden Remix)",
+"Dirty Rush & Gregor Es - EVRBDY",
+"Queen - Bohemian Rhapsody",
+"Mesto - Rio",
+"Naten - 2077",
+"Gigi D'Agostino - L'Amour Toujours",
+"Ben Van Kuringen - Life",
+"French Affair - My Heart Goes Boom",
+"Virtual Self - Ghost Voices",
+"Matthew Koma - Kisses Back (KBN & NoOne Bootleg)",
+"Freischwimmer - California Dreamin",
+"Mr. Belt & Wezol - Shiver",
+"Liquido - Narcotic"
+}
 
 all_songs_tuple = tuple(all_songs_set)
 
@@ -32,7 +60,7 @@ class Playlist:
     def set_length(self,x):
         repetition_happened = False
         #reps = 0
-        if x > 10: # Change later in process
+        if x > 20: # Change later in process
             return "Error. Currently only playlists of up to 10 songs allowed."
         else:
             self.length = x
